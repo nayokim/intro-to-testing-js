@@ -14,6 +14,8 @@ describe('helloWorld', function () {
     });
 });
 
+
+
 describe('sayHello', function () {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
@@ -24,8 +26,6 @@ describe('sayHello', function () {
     it("should never return 'undefined' when called", function () {
         expect(sayHello()).not.toBe(undefined);
     });
-});
-describe('sayHello', function () {
     it('should return the string "Hello, Jane!" when executed', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
@@ -35,12 +35,9 @@ describe('sayHello', function () {
     it('should return the string "Hello, Pat! when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-});
-
-describe('sayHello', function () {
-    it('should return "Hello, World"', function () {
-        expect(sayHello("World")).toBe("Hello, World!");
-    });
+    // it('should return "Hello, World"', function () {
+    //     expect(sayHello("World")).toBe("Hello, World!");
+    // });
 
     it('should return "Hello, World"', function(){
         expect(sayHello(true)).toBe("Hello, World!");
@@ -49,12 +46,27 @@ describe('sayHello', function () {
     it('should return "Hello, World"', function(){
         expect(sayHello(false)).toBe("Hello, World!");
     });
-
-
 });
 
 
+describe('isFive', function(){
+    it ('should be a defined function',function(){
+        expect(typeof isFive).toBe('function');
+    });
+    it ('should return a boolean', function(){
+        expect(typeof isFive()).toBe('boolean')
+    });
+    it ('should return true if inputted 5', function(){
+        expect(isFive(5)).toBe(true)
+    });
 
+    it ('should return true if "5" is inputted', function(){
+        expect(isFive("5")).toBe(true);
+    });
+    it("should never return 'undefined' when called", function () {
+        expect(sayHello()).not.toBe(undefined);
+    });
+});
 
 
 
