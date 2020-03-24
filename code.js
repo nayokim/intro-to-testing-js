@@ -16,12 +16,12 @@ const helloWorld = function () {
 function sayHello(input) {
  if (typeof input === "string") {
         return 'Hello, ' + input + '!';
-    } else if (input !=="string" || "undefined"){
+    } else if (input !=="string"){
         return "Hello, World!";
-    } else {
-     return "Hello, World!";
  }
 }
+
+
 
 //isFive function
 function isFive(input){
