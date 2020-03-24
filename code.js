@@ -16,8 +16,21 @@ const helloWorld = function () {
 function sayHello(input) {
  if (typeof input === "string") {
         return 'Hello, ' + input + '!';
-    } else if (input !=="string"){
+    } else if (input !=="string" || "undefined"){
         return "Hello, World!";
+    } else {
+     return "Hello, World!";
+ }
+}
+
+//isFive function
+function isFive(input){
+    if (input === 5){
+        return true;
+    } else if (input === "5") {
+        return true;
+    } else{
+        return false;
     }
 }
 
