@@ -14,31 +14,43 @@ describe('helloWorld', function () {
     });
 });
 
-describe('sayHello', function(){
-    it('should be define function', function(){
+describe('sayHello', function () {
+    it('should be define function', function () {
         expect(typeof sayHello).toBe('function');
 
     });
-    it ('should return a string when called', function(){
+    it('should return a string when called', function () {
         expect(typeof sayHello()).toBe("string");
     });
-    it('should return "Hello, Jane!" when executed', function(){
-        expect (sayHello("Jane")).toBe("Hello, Jane!");
+    it('should return "Hello, Jane!" when executed', function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
-    it ('should return "Hello, Alex!" when executed', function(){
-        expect (sayHello("Alex")).toBe("Hello, Alex!");
-    })
-    it ('should return "Hello, Pat!" when executed', function(){
+    it('should return "Hello, Alex!" when executed', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return "Hello, Pat!" when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
-    })
-    it ('should return "Hello, World! when executed', function(){
+    });
+    it('should return "Hello, World! when executed', function () {
         expect(sayHello()).toBe("Hello, World!");
-    })
+    });
+    it('should return "Hello, World!" when executed with input true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when executed with input false', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when executed with input ""', function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when executed with input 2.3', function () {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
     it("should never return 'undefined' when called", function () {
         expect(helloWorld()).not.toBe(undefined);
     });
-
 });
+
 
 
 

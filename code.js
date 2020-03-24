@@ -1,5 +1,5 @@
 // helloWorld function 
-const helloWorld = function() {
+const helloWorld = function () {
     return "Hello, World!";
 }
 
@@ -14,10 +14,12 @@ const helloWorld = function() {
 // }
 
 function sayHello(input) {
-    if (input){
-    return "Hello, " + input + "!"
-    } else {
+ if (typeof input === "string") {
+        return 'Hello, ' + input + '!';
+    } else if (input !=="string"){
         return "Hello, World!";
     }
 }
+
+
 
