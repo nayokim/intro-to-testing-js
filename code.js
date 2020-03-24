@@ -22,8 +22,10 @@ function sayHello(input){
     } else {
         return "Hello, Jane!";
     }
-
 }
+
+console.log(sayHello('Hi'));
+console.log(sayHello("Alex"));
 
 //isFive function
 function isFive(input){
@@ -35,5 +37,14 @@ function isFive(input){
         return false;
     }
 }
+
+//isEven function
+
+function isEven(input){
+    return false ;
+}
+
+
+
 
 

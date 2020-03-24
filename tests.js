@@ -64,9 +64,10 @@ describe('isFive', function(){
         expect(isFive("5")).toBe(true);
     });
     it("should never return 'undefined' when called", function () {
-        expect(sayHello()).not.toBe(undefined);
+        expect(isFive()).not.toBe(undefined);
     });
 });
+
 
 
 
